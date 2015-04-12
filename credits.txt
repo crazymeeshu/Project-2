@@ -1,1 +1,3 @@
-This fantastic game has been collaborated by the amazing Jose Sires Campos
+Title: Think outside the Box
+Team: Pumping Lemmas
+Members: Jose Sires Campos and Meeshaan Shah
