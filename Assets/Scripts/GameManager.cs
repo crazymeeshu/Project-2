@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour {
     public static int highScore;
 
     public static int currentLevel = 0;
+    public static int numLevels = 8;
     public static int unlockedLevel;
 
     void Start()
@@ -15,7 +16,7 @@ public class GameManager : MonoBehaviour {
 
     public static void CompleteLevel()
     {
-        if (currentLevel < 6)
+        if (currentLevel < (numLevels - 1))
         {
             currentLevel += 1;
             Application.LoadLevel(currentLevel);
