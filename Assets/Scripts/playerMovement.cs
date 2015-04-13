@@ -25,7 +25,6 @@ public class playerMovement : MonoBehaviour {
 
         if (transform.position.y < -2)
         {
-			//StartCoroutine (spawnDelay());
             Die();
         }
 	}
@@ -34,7 +33,6 @@ public class playerMovement : MonoBehaviour {
     {
         if (other.transform.tag == "Enemy")
         {
-			//StartCoroutine (spawnDelay ());
             Die();
         }
     }
@@ -53,19 +51,17 @@ public class playerMovement : MonoBehaviour {
 
     void Die()
     {
-		//StartCoroutine (spawnDelay());
-        //Instantiate(deathParticles, transform.position, Quaternion.identity);
 		Instantiate(deathParticles, transform.position, Quaternion.identity);
-		//StartCoroutine (spawnDelay());
-        transform.position = spawn;
-		//StartCoroutine (spawnDelay());
+        renderer.enabled = false;
+        collider.enabled = false;
+        rigidbody.useGravity = false;
+		StartCoroutine (spawnDelay());
     }
 
 	public IEnumerator spawnDelay()
 	{
 		yield return new WaitForSeconds(1);
-		//Instantiate(deathParticles, transform.position, Quaternion.identity);
-		//transform.position = spawn;
+        Application.LoadLevel(Application.loadedLevel);
 		Debug.Log ("Waiting...");
 	}
 	
