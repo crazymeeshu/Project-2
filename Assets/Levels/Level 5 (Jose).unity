@@ -937,10 +937,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 19056450}
   - {fileID: 294637977}
-  - {fileID: 1090488221}
+  - {fileID: 19056450}
   - {fileID: 1353117776}
+  - {fileID: 1090488221}
   moveSpeed: 5
 --- !u!23 &486396991
 Renderer:
@@ -1099,10 +1099,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 735198766}
   - {fileID: 464266233}
-  - {fileID: 1671865438}
+  - {fileID: 735198766}
   - {fileID: 1134480694}
+  - {fileID: 1671865438}
   moveSpeed: 5
 --- !u!23 &565527223
 Renderer:
@@ -1250,10 +1250,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1671865438}
   - {fileID: 1134480694}
-  - {fileID: 735198766}
+  - {fileID: 1671865438}
   - {fileID: 464266233}
+  - {fileID: 735198766}
   moveSpeed: 5
 --- !u!23 &710260353
 Renderer:
@@ -2328,10 +2328,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1090488221}
   - {fileID: 1353117776}
-  - {fileID: 19056450}
+  - {fileID: 1090488221}
   - {fileID: 294637977}
+  - {fileID: 19056450}
   moveSpeed: 5
 --- !u!23 &1343349546
 Renderer:
