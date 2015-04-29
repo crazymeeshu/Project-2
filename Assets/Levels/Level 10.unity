@@ -853,7 +853,7 @@ Prefab:
       objectReference: {fileID: 1122367103}
     - target: {fileID: 11400000, guid: 2c211dba90ef55c4fa851f167ff0f0f0, type: 2}
       propertyPath: moveSpeed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 2c211dba90ef55c4fa851f167ff0f0f0, type: 2}
       propertyPath: patrolPoints.Array.data[4]
@@ -1314,7 +1314,7 @@ Prefab:
       objectReference: {fileID: 138528615}
     - target: {fileID: 11400000, guid: 2c211dba90ef55c4fa851f167ff0f0f0, type: 2}
       propertyPath: moveSpeed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 2c211dba90ef55c4fa851f167ff0f0f0, type: 2}
       propertyPath: patrolPoints.Array.data[4]
@@ -2122,7 +2122,7 @@ MonoBehaviour:
   - {fileID: 2083553155}
   - {fileID: 459395393}
   - {fileID: 1397011489}
-  moveSpeed: 1
+  moveSpeed: 2
 --- !u!23 &108588744
 Renderer:
   m_ObjectHideFlags: 0
@@ -4162,7 +4162,7 @@ Prefab:
       objectReference: {fileID: 1521534193}
     - target: {fileID: 11400000, guid: 2c211dba90ef55c4fa851f167ff0f0f0, type: 2}
       propertyPath: moveSpeed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 2c211dba90ef55c4fa851f167ff0f0f0, type: 2}
       propertyPath: patrolPoints.Array.data[4]
@@ -13576,7 +13576,7 @@ MonoBehaviour:
   - {fileID: 443743048}
   - {fileID: 758299137}
   - {fileID: 1122367103}
-  moveSpeed: 1
+  moveSpeed: 2
 --- !u!23 &791679879
 Renderer:
   m_ObjectHideFlags: 0
@@ -17098,7 +17098,7 @@ MonoBehaviour:
   - {fileID: 138528615}
   - {fileID: 1188596448}
   - {fileID: 1254792618}
-  moveSpeed: 1
+  moveSpeed: 2
 --- !u!23 &1024622989
 Renderer:
   m_ObjectHideFlags: 0
@@ -18328,7 +18328,7 @@ MonoBehaviour:
   - {fileID: 1122367103}
   - {fileID: 36775961}
   - {fileID: 443743048}
-  moveSpeed: 1
+  moveSpeed: 2
 --- !u!23 &1082782315
 Renderer:
   m_ObjectHideFlags: 0
@@ -18419,7 +18419,7 @@ MonoBehaviour:
   - {fileID: 1254792618}
   - {fileID: 1877955927}
   - {fileID: 138528615}
-  moveSpeed: 1
+  moveSpeed: 2
 --- !u!23 &1084497756
 Renderer:
   m_ObjectHideFlags: 0
@@ -19657,7 +19657,7 @@ MonoBehaviour:
   - {fileID: 1521534193}
   - {fileID: 1608517067}
   - {fileID: 845070288}
-  moveSpeed: 1
+  moveSpeed: 2
 --- !u!23 &1146015797
 Renderer:
   m_ObjectHideFlags: 0
@@ -26077,7 +26077,7 @@ Prefab:
       objectReference: {fileID: 2083553155}
     - target: {fileID: 11400000, guid: 2c211dba90ef55c4fa851f167ff0f0f0, type: 2}
       propertyPath: moveSpeed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 2c211dba90ef55c4fa851f167ff0f0f0, type: 2}
       propertyPath: patrolPoints.Array.data[4]
@@ -29600,7 +29600,7 @@ MonoBehaviour:
   - {fileID: 845070288}
   - {fileID: 1084882113}
   - {fileID: 1521534193}
-  moveSpeed: 1
+  moveSpeed: 2
 --- !u!23 &1690879280
 Renderer:
   m_ObjectHideFlags: 0
@@ -29691,7 +29691,7 @@ MonoBehaviour:
   - {fileID: 1397011489}
   - {fileID: 314654204}
   - {fileID: 2083553155}
-  moveSpeed: 1
+  moveSpeed: 2
 --- !u!23 &1691516473
 Renderer:
   m_ObjectHideFlags: 0
