@@ -4,15 +4,18 @@ using System.Collections;
 public class playerMovement : MonoBehaviour {
     public float moveSpeed;
     public GameObject deathParticles;
+    //public Collider checkPoint;
 
     private float maxSpeed = 5f;
     private Vector3 input;
     private Vector3 spawn;
+    private Vector3 checkPoint;
 
 
 	// Use this for initialization
 	void Start () {
         spawn = transform.position;
+        //checkPoint = GameObject.FindWithTag("Checkpoint").transform;
 	}
 	
 	// Update is called once per frame
@@ -43,6 +46,11 @@ public class playerMovement : MonoBehaviour {
         {
             Die();
         }
+        if (other.transform.tag == "Checkpoint")
+        {
+            checkPoint = GameObject.FindWithTag("Checkpoint").transform.position;
+            spawn = checkPoint;
+        }
         if (other.transform.tag == "Goal")
         {
             GameManager.CompleteLevel();
@@ -61,6 +69,7 @@ public class playerMovement : MonoBehaviour {
 	public IEnumerator spawnDelay()
 	{
 		yield return new WaitForSeconds(1);
+        //this.transform.position = checkPoint.position;
         Application.LoadLevel(Application.loadedLevel);
 		Debug.Log ("Waiting...");
 	}
