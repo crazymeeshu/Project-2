@@ -4,18 +4,24 @@ using System.Collections;
 public class playerMovement : MonoBehaviour {
     public float moveSpeed;
     public GameObject deathParticles;
-    //public Collider checkPoint;
 
     private float maxSpeed = 5f;
     private Vector3 input;
     private Vector3 spawn;
     private Vector3 checkPoint;
+	private Vector3 bossPosition;
+	private bool checkPointControl;
 
 
 	// Use this for initialization
 	void Start () {
         spawn = transform.position;
-        //checkPoint = GameObject.FindWithTag("Checkpoint").transform;
+		checkPoint = spawn;
+		checkPointControl = false;
+        if (!(GameObject.FindWithTag("Boss") == null))
+        {
+            bossPosition = GameObject.FindWithTag("Boss").transform.position;
+        }
 	}
 	
 	// Update is called once per frame
@@ -34,7 +40,7 @@ public class playerMovement : MonoBehaviour {
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.transform.tag == "Enemy")
+		if (other.transform.tag == "Enemy" || other.transform.tag == "Boss")
         {
             Die();
         }
@@ -42,14 +48,20 @@ public class playerMovement : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == "Enemy")
+		if (other.transform.tag == "Enemy" || other.transform.tag == "Boss")
         {
             Die();
         }
-        if (other.transform.tag == "Checkpoint")
+        if (other.transform.tag == "Checkpoint" && !checkPointControl)
         {
             checkPoint = GameObject.FindWithTag("Checkpoint").transform.position;
-            spawn = checkPoint;
+			GameObject.FindWithTag("Checkpoint").renderer.enabled = true;
+            if (!(GameObject.FindWithTag("Boss") == null))
+            {
+                bossPosition = GameObject.FindWithTag("Boss").transform.position;
+            }
+			checkPointControl = true;
+            Debug.Log("Checkpoint reached");
         }
         if (other.transform.tag == "Goal")
         {
@@ -68,10 +80,16 @@ public class playerMovement : MonoBehaviour {
 
 	public IEnumerator spawnDelay()
 	{
+        Debug.Log("Respawning...");
 		yield return new WaitForSeconds(1);
-        //this.transform.position = checkPoint.position;
-        Application.LoadLevel(Application.loadedLevel);
-		Debug.Log ("Waiting...");
+		renderer.enabled = true;
+		collider.enabled = true;
+		rigidbody.useGravity = true;
+		transform.position = checkPoint;
+        if (!(GameObject.FindWithTag("Boss") == null))
+        {
+            GameObject.FindWithTag("Boss").transform.position = bossPosition;
+        }
 	}
 	
 }
