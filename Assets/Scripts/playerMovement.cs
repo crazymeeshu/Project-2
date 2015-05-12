@@ -18,10 +18,9 @@ public class playerMovement : MonoBehaviour {
         spawn = transform.position;
 		checkPoint = spawn;
 		checkPointControl = false;
-        if (!(GameObject.FindWithTag("Boss") == null))
-        {
-            bossPosition = GameObject.FindWithTag("Boss").transform.position;
-        }
+		if (!(GameObject.FindWithTag ("Boss") == null)) {
+			bossPosition = GameObject.FindWithTag ("Boss").transform.position;
+		}
 	}
 	
 	// Update is called once per frame
@@ -86,10 +85,8 @@ public class playerMovement : MonoBehaviour {
 		collider.enabled = true;
 		rigidbody.useGravity = true;
 		transform.position = checkPoint;
-        if (!(GameObject.FindWithTag("Boss") == null))
-        {
-            GameObject.FindWithTag("Boss").transform.position = bossPosition;
-        }
+		if (!(GameObject.FindWithTag ("Boss") == null)) {
+			GameObject.FindWithTag ("Boss").transform.position = bossPosition;
+		}
 	}
-	
 }

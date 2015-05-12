@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
     public static int highScore;
 
     public static int currentLevel = 0;
-    public static int numLevels = 12;
+    public static int numLevels = 13;
     public static int unlockedLevel;
 
     void Start()
