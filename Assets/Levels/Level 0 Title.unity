@@ -387,7 +387,7 @@ Transform:
   m_PrefabInternal: {fileID: 673456681}
   m_GameObject: {fileID: 276474661}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -160, y: 10, z: 110}
+  m_LocalPosition: {x: -185, y: 10, z: 110}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -428,7 +428,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 456916, guid: 6b68d94c503148c4398bb6a2c8cb89bc, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -185
+      value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 456916, guid: 6b68d94c503148c4398bb6a2c8cb89bc, type: 2}
       propertyPath: m_LocalPosition.y
@@ -659,7 +659,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 456916, guid: 6b68d94c503148c4398bb6a2c8cb89bc, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 160
+      value: 185
       objectReference: {fileID: 0}
     - target: {fileID: 456916, guid: 6b68d94c503148c4398bb6a2c8cb89bc, type: 2}
       propertyPath: m_LocalPosition.y
@@ -814,7 +814,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 456916, guid: 6b68d94c503148c4398bb6a2c8cb89bc, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -160
+      value: -185
       objectReference: {fileID: 0}
     - target: {fileID: 456916, guid: 6b68d94c503148c4398bb6a2c8cb89bc, type: 2}
       propertyPath: m_LocalPosition.y
@@ -957,10 +957,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .948529422, g: .104617201, b: .104617201, a: 1}
+  m_Color: {r: .313725501, g: .0784313753, b: .921568632, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: 063ef2b812532f943bdc5831519ba0c7, type: 3}
-    m_FontSize: 110
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
@@ -969,8 +969,10 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: THINK OUTSIDE
+    m_LineSpacing: .5
+  m_Text: 'THINK OUTSIDE
+
+    THE BOX'
 --- !u!222 &785284600
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -992,7 +994,7 @@ RectTransform:
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 0, y: 170}
-  m_SizeDelta: {x: 1000, y: 200}
+  m_SizeDelta: {x: 1000, y: 300}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &845530358
 GameObject:
@@ -1518,7 +1520,7 @@ Transform:
   m_PrefabInternal: {fileID: 534297660}
   m_GameObject: {fileID: 1243204682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 160, y: 10, z: 110}
+  m_LocalPosition: {x: 185, y: 10, z: 110}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1572,7 +1574,7 @@ Transform:
   m_PrefabInternal: {fileID: 2038415073}
   m_GameObject: {fileID: 1318452062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 185, y: 10, z: 110}
+  m_LocalPosition: {x: 160, y: 10, z: 110}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1650,7 +1652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .948529422, g: .104617201, b: .104617201, a: 1}
+  m_Color: {r: .313725501, g: .0784313753, b: .921568632, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: 063ef2b812532f943bdc5831519ba0c7, type: 3}
     m_FontSize: 50
@@ -1863,7 +1865,7 @@ Transform:
   m_PrefabInternal: {fileID: 432465758}
   m_GameObject: {fileID: 1623660997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -185, y: 10, z: 110}
+  m_LocalPosition: {x: -160, y: 10, z: 110}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1904,7 +1906,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 456916, guid: 6b68d94c503148c4398bb6a2c8cb89bc, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 185
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 456916, guid: 6b68d94c503148c4398bb6a2c8cb89bc, type: 2}
       propertyPath: m_LocalPosition.y

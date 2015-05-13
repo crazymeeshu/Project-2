@@ -18,10 +18,10 @@ public class ButtonScript : MonoBehaviour {
 
 	void OnGUI(){
 		if (GameManager.currentLevel == 0) {
-			if (GUI.Button (new Rect ((Screen.width / 2 - 150), (Screen.height / 3 - 50), 300, 75), "START GAME")) {
+			if (GUI.Button (new Rect ((Screen.width / 2 - 150), (Screen.height / 3 - 30), 300, 75), "START GAME")) {
 				GameManager.CompleteLevel ();
 			}
-			if (GUI.Button (new Rect ((Screen.width / 2 - 150), (Screen.height / 3 + 150), 300, 75), "QUIT")) {
+			if (GUI.Button (new Rect ((Screen.width / 2 - 150), (Screen.height / 3 + 180), 300, 75), "QUIT")) {
 				Application.Quit ();
 			}
 		} else if (isPause){
